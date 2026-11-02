@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500;600&display=swap');
+
+:root {
+    --bs-primary: #1F3B2C;
+    --bs-primary-rgb: 31, 59, 44;
+    --bs-success: #3F6652;
+    --bs-success-rgb: 63, 102, 82;
+    --bs-warning: #B08D57;
+    --bs-warning-rgb: 176, 141, 87;
+    --bs-info: #33564A;
+    --bs-info-rgb: 51, 86, 74;
+    --bs-danger: #B0413E;
+    --bs-danger-rgb: 176, 65, 62;
+    --bs-body-bg: #F7F3EA;
+    --bs-body-color: #26241F;
+    --bs-border-radius: .6rem;
+    --bs-border-radius-lg: .9rem;
+    --nay-gold: #B08D57;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, .modal-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+}
+
+/* Texto legible sobre el dorado (btn-warning / bg-warning) */
+.btn-warning, .bg-warning { color: #fff !important; }
+.btn-warning:hover { filter: brightness(0.92); color: #fff; }
+
+/* ---------- Navbar ---------- */
+.navbar-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    color: var(--bs-primary) !important;
+}
+
+/* ---------- Encabezado de página administrativa ---------- */
+.nay-page-header {
+    background: linear-gradient(135deg, #1F3B2C 0%, #16291d 100%);
+    color: #F7F3EA;
+    border-radius: var(--bs-border-radius-lg);
+    padding: 1.75rem 2rem;
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    box-shadow: 0 10px 28px rgba(31, 59, 44, .18);
+}
+.nay-page-header .nay-eyebrow {
+    font-size: .72rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #E7AEB3;
+    margin-botóntom: .2rem;
+}
+.nay-page-header h1 {
+    font-size: 1.9rem;
+    margin: 0;
+}
+.nay-page-header .nay-icon-badge {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .12);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    color: #E7AEB3;
+}
+
+/* ---------- Tarjetas ---------- */
+.card {
+    border: 0;
+    border-radius: var(--bs-border-radius-lg);
+    box-shadow: 0 6px 22px rgba(31, 59, 44, .08);
+}
+.card-header {
+    background: #fff;
+    border-botóntom: 1px solid rgba(31, 59, 44, .08);
+    border-radius: var(--bs-border-radius-lg) var(--bs-border-radius-lg) 0 0 !important;
+    padding: 1.1rem 1.4rem;
+}
+.card-header h4 {
+    margin: 0;
+    font-size: 1.35rem;
+    color: var(--bs-primary);
+}
+
+/* Tarjeta de estáadística (total) */
+.card.bg-success {
+    background: linear-gradient(135deg, #3F6652, #1F3B2C) !important;
+    border-radius: var(--bs-border-radius-lg);
+}
+
+/* ---------- Tabla ---------- */
+.table {
+    margin-botóntom: 0;
+}
+.table thead {
+    background: var(--bs-primary);
+}
+.table thead th {
+    color: #F7F3EA;
+    font-weight: 500;
+    font-size: .82rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    border: 0;
+    vertical-align: middle;
+    padding: .9rem 1rem;
+}
+.table tbody td {
+    vertical-align: middle;
+    padding: .85rem 1rem;
+}
+.table-hover tbody tr:hover {
+    background-color: #FBF8F2;
+}
+.table img {
+    border-radius: .5rem;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(31,59,44,.15);
+}
+
+/* ---------- Botones ---------- */
+.btn {
+    border-radius: 999px;
+    font-weight: 500;
+    letter-spacing: .01em;
+}
+.btn-sm, .table .btn {
+    font-size: .8rem;
+    padding: .35rem .9rem;
+}
+
+/* ---------- Modales ---------- */
+.modal-content {
+    border: 0;
+    border-radius: var(--bs-border-radius-lg);
+    overflow: hidden;
+}
+.modal-header {
+    padding: 1.1rem 1.4rem;
+}
+.modal-body {
+    padding: 1.4rem;
+}
+.modal-body img#blah {
+    border-radius: .6rem;
+    margin-top: .5rem;
+    box-shadow: 0 4px 14px rgba(31,59,44,.15);
+}
+.form-control:focus, .form-select:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 .2rem rgba(31, 59, 44, .12);
+}
+
+/* ---------- Estado vacío ---------- */
+.nay-empty-state {
+    text-align: center;
+    padding: 3.5rem 1rem;
+    color: #6b7d72;
+}
+.nay-empty-state i {
+    font-size: 2.4rem;
+    color: var(--nay-gold);
+    margin-botóntom: .75rem;
+}
+
+/* ---------- Toasts ---------- */
+.toast {
+    border-radius: .7rem;
+    box-shadow: 0 10px 26px rgba(0,0,0,.18);
+}

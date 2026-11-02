@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Bosque de Náyades</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/bosqueNayades.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container"> <a class="navbar-brand fw-bold" href="./index.html"> <img src="" alt="Logo"
+                        width="55" height="55" style="object-fit: contain; border-radius: 50%;"> Bosque de Náyades </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span
+                        class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item dropdown"> </li>
+                        <li class="nav-item"> <a class="nav-link" href="./index.html"> Inicio </a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="./catalogo.html"> Catálogo </a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="./colecciones.html"> Colecciones </a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="./pedido/misPedidos.html"> Pedidos </a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="./sitemap.html"> Sitemap </a> </li>
+                    </ul> <!-- Iconos -->
+                    <ul class="navbar-nav"> <!-- Buscador -->
+                        <form class="d-flex me-3" method="get" action="#"> <input class="form-control" type="search"
+                                name="busqueda"> <button class="btn btn-outline-success ms-2" type="submit"> <i
+                                    class="fas fa-search"></i> </button> </form>
+                        <li class="nav-item px-2"> <a class="nav-link" href="./carrito.html"> <i
+                                    class="fas fa-shopping-cart"></i> </a> </li>
+                        <li class="nav-item px-2"> <a class="nav-link" href="./login.html"> <i class="fas fa-user"></i>
+                            </a> </li>
+                        <li class="nav-item px-2">
+                            <form method="post" action="#"> <button class="btn nav-link" type="submit"> <i
+                                        class="fas fa-sign-out-alt"></i> </button> </form>
+                        </li>
+                        <li class="nav-item px-2"> <a class="nav-link" href="./favoritos.html"> <i
+                                    class="fas fa-heart"></i> </a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="nay-page-header m-0" style="border-radius:0; padding:3.5rem 0;">
+        <div class="container text-center">
+            <div class="nay-eyebrow"> Bosque de Náyades</div>
+            <h1 class="mb-2">Joyería artesanal con flores reales</h1>
+            <p class="mb-3" style="color:#D9E4DA;">Cada pieza preserva una flor real en resina, capturando un instante
+                del bosque que nunca se marchita.</p> <a class="btn btn-light fw-semibold" href="./catalogo.html"> <i
+                    class="fa-solid fa-gem me-1"></i> Ver catálogo</a>
+        </div>
+    </section>
+    <main class="container py-5">
+        <h3 class="mb-4"><i class="fa-solid fa-layer-group me-2 text-success"></i>Explora por categoría</h3>
+        <div class="row g-3 mb-5">
+            <div class="col-6 col-md-3"> <a class="card h-100 text-center text-decoration-none text-reset" href="#">
+                    <div class="card-body"> <i class="fa-solid fa-gem fs-3 text-success mb-2"></i>
+                        <h6 class="mb-0">Categoría</h6>
+                    </div>
+                </a> </div>
+        </div>
+        <h3 class="mb-4"><i class="fa-solid fa-star me-2 text-success"></i>Piezas destácadas</h3>
+        <div class="row g-4">
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100"> <img class="card-img-top" src="" style="aspect-ratio:4/5; object-fit:cover;"
+                        onerror="this.onerror=null; this.src='https://placehold.co/500x625/F7F3EA/1F3B2C?text=Bosque+de+N%C3%A1yades';" />
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Producto</h5>
+                        <p class="fw-semibold mb-2"> 0</p> <a class="btn btn-primary btn-sm" href="#">Ver detalle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nay-empty-state">
+            <i class="fa-solid fa-seedling d-block"></i>
+            <span>Todavía no hay piezas activas
+                para mostrar.
+            </span>
+
+        </div>
+    </main>
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Bosque de Náyades</h5>
+                    <p>Joyería artesanal con flores reales.</p> <img src="imagen_aquí.jpg" alt="Logo" width="200"
+                        height="200" style="object-fit: contain; border-radius: 50%;">
+                </div>
+                <div class="col-md-3">
+                    <h5>Navegación</h5>
+                    <p> <a class="text-white text-decoration-none" href="./index.html"> Inicio </a> </p>
+                    <p> <a class="text-white text-decoration-none" href="./catalogo.html"> Catálogo </a> </p>
+                    <p> <a class="text-white text-decoration-none" href="./colecciones.html"> Colecciones </a> </p>
+                    <p> <a class="text-white text-decoration-none" href="./sitemap.html"> Sitemap </a> </p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Ayuda</h5>
+                    <p>Cuidados de las piezas</p>
+                    <p>Envíos a Costa Rica</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contacto</h5>
+                    <p> <a href="https://wa.me/50688985405" target="_blank" rel="noopener noreferrer"
+                            class="text-decoration-none text-light"> <i class="fab fa-whatsapp"></i> WhatsApp </a> </p>
+                    <p> <a href="https://www.instagram.com/bosquedenayadescr?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw=="
+                            target="_blank" rel="noopener noreferrer" class="text-decoration-none text-light"> <i
+                                class="fab fa-instagram"></i> Instagram </a> </p>
+                    <p> <i class="fas fa-envelope"></i> contacto@bosquedenayades.com </p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center"> © 2026 Bosque de Náyades. Todos los derechos reservados. </div>
+        </div>
+    </footer>
+</body>
+
+</html>
