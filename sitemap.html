@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Bosque de Náyades</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/bosqueNayades.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container"> <!-- Logo --> <a class="navbar-brand fw-bold" href="./index.html"> Bosque de Náyades </a> <button
+                    class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span
+                        class="navbar-toggler-icon"></span> </button> <!-- menu-->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mx-auto">
+                        
+                        <li class="nav-item"> <a class="nav-link" href="./index.html"> Inicio </a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="./catalogo.html"> Catálogo </a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="./colecciones.html"> Colecciones </a> </li>
+                        
+                        <li class="nav-item"> <a class="nav-link" href="./sitemap.html"> Sitemap </a> </li>
+                    </ul> <!-- Iconos -->
+                    <ul class="navbar-nav"> <!-- Buscador -->
+                        <form class="d-flex me-3" method="get" action="#"> <input class="form-control" type="search"
+                                name="busqueda"> <button class="btn btn-outline-success ms-2" type="submit"> <i
+                                    class="fas fa-search"></i> </button> </form>
+                        <li class="nav-item px-2"> <a class="nav-link" href="./carrito.html"> <i
+                                    class="fas fa-shopping-cart"></i> </a> </li>
+                        <li class="nav-item px-2"> <a class="nav-link" href="./login.html"> <i class="fas fa-user"></i>
+                            </a> </li>
+                       
+                        <li class="nav-item px-2">
+                            <form method="post" action="#"> <button class="btn nav-link" type="submit"> <i
+                                        class="fas fa-sign-out-alt"></i> </button> </form>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="nay-page-header m-0" style="border-radius:0;">
+        <div class="container d-flex align-items-center"> <span class="nay-icon-badge"><i
+                    class="fa-solid fa-map"></i></span>
+            <div>
+                <div class="nay-eyebrow">Mapa del sitio</div>
+                <h1>Sitemap</h1>
+            </div>
+        </div>
+    </section>
+    <main class="container py-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h4 class="mb-0"><i class="fa-solid fa-compass me-2 text-success"></i>Navegación</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><a href="./index.html">Inicio</a></li>
+                            <li class="mb-2"><a href="./catalogo.html">Catálogo</a></li>
+                            <li class="mb-2"><a href="./colecciones.html">Colecciones</a></li>
+                            <li class="mb-2"><a href="./carrito.html">Carrito</a></li>
+                            
+                            <li><a href="./login.html">Iniciar sesión</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h4 class="mb-0"><i class="fa-solid fa-circle-info me-2 text-success"></i>Ayuda</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">Cuidados de las piezas</li>
+                            <li>Envíos a Costa Rica</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Bosque de Náyades</h5>
+                    <p>Joyería artesanal con flores reales.</p> <img src="imagen_aquíi.jpg" alt="Logo" width="200"
+                        height="200" style="object-fit: contain; border-radius: 50%;">
+                </div>
+                <div class="col-md-3">
+                    <h5>Navegación</h5>
+                    <p> <a class="text-white text-decoration-none" href="./index.html"> Inicio </a> </p>
+                    <p> <a class="text-white text-decoration-none" href="./catalogo.html"> Catálogo </a> </p>
+                    <p> <a class="text-white text-decoration-none" href="./colecciones.html"> Colecciones </a> </p>
+                    <p> <a class="text-white text-decoration-none" href="./sitemap.html"> Sitemap </a> </p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Ayuda</h5>
+                    <p>Cuidados de las piezas</p>
+                    <p>Envíos a Costa Rica</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contacto</h5>
+                    <p> <a href="https://wa.me/50688985405" target="_blank" rel="noopener noreferrer"
+                            class="text-decoration-none text-light"> <i class="fab fa-whatsapp"></i> WhatsApp </a> </p>
+                    <p> <a href="https://www.instagram.com/bosquedenayadescr?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw=="
+                            target="_blank" rel="noopener noreferrer" class="text-decoration-none text-light"> <i
+                                class="fab fa-instagram"></i> Instagram </a> </p>
+                    <p> <i class="fas fa-envelope"></i> contacto@bosquedenayades.com </p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center"> © 2026 Bosque de Náyades. Todos los derechos reservados. </div>
+        </div>
+    </footer>
+</body>
+
+</html> usuario/PK
